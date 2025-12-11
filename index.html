@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#0f172a">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#1f2937">
     <title>Workout Tracker Pro</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -194,7 +191,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>💪Workout Tracker Pro</h1>
+        <h1>💪 Workout Tracker Pro</h1>
         <div class="header-subtitle">Track Every Rep, Build Every Day</div>
     </div>
 
@@ -215,56 +212,56 @@
 
     <script>
         const exercises = {
-            'Barbell Bench Press': {v: 'https://youtu.be/rT7DgCr-3pg', s: '4Ã—4-6'},
-            'Overhead Barbell Press': {v: 'https://youtu.be/2yjwXTZQDDI', s: '3Ã—4-6'},
-            'Incline Dumbbell Press': {v: 'https://youtu.be/8iPEnn-ltC8', s: '3Ã—6-8'},
-            'Weighted Dips': {v: 'https://youtu.be/2z8JmcrW-As', s: '3Ã—6-8'},
-            'Lateral Raises': {v: 'https://youtu.be/3VcKaXpzqRo', s: '3Ã—10-12'},
-            'Triceps Rope Pushdown': {v: 'https://youtu.be/2-LAMcpzODU', s: '3Ã—10-12'},
-            'Push-ups': {v: 'https://youtu.be/IODxDxX7oi4', s: '2Ã—AMRAP'},
-            'Deadlift': {v: 'https://youtu.be/op9kVnSso6Q', s: '3-4Ã—3-5'},
-            'Weighted Pull-ups': {v: 'https://youtu.be/tB3X4TjTIes', s: '4Ã—4-6'},
-            'Barbell Row': {v: 'https://youtu.be/FWJR5Ve8bnQ', s: '3Ã—4-6'},
-            'Chest-Supported Row': {v: 'https://youtu.be/zE52eD7TD5I', s: '3Ã—6-8'},
-            'Face Pulls': {v: 'https://youtu.be/rep-qVOkqgk', s: '3Ã—12-15'},
-            'Barbell Bicep Curls': {v: 'https://youtu.be/ykJmrZ5v0Oo', s: '3Ã—8-10'},
-            'Hammer Curls': {v: 'https://youtu.be/zC3nLlEvin4', s: '2Ã—10-12'},
-            'Back Squat': {v: 'https://youtu.be/ultWZbUMPL8', s: '4Ã—4-6'},
-            'Romanian Deadlift': {v: 'https://youtu.be/2SHsk9AzdjA', s: '3Ã—6-8'},
-            'Leg Press': {v: 'https://youtu.be/IZxyjW7MPJQ', s: '3Ã—8-10'},
-            'Walking Lunges': {v: 'https://youtu.be/L8fvypPrzzs', s: '3Ã—10/leg'},
-            'Calf Raises': {v: 'https://youtu.be/gwLzBJYoWlI', s: '4Ã—10-12'},
-            'Hanging Leg Raises': {v: 'https://youtu.be/Pr1ieGZ5atk', s: '3Ã—10-15'},
-            'Incline Barbell Press': {v: 'https://youtu.be/SrqOu55lrYU', s: '3-4Ã—8-10'},
-            'Flat Dumbbell Press': {v: 'https://youtu.be/622ku8i0M14', s: '3Ã—8-12'},
-            'Machine Chest Press': {v: 'https://youtu.be/xUm0BiZCWlQ', s: '3Ã—10-12'},
-            'Dumbbell Lateral Raises': {v: 'https://youtu.be/3VcKaXpzqRo', s: '4Ã—12-15'},
-            'Cable Front Raises': {v: 'https://youtu.be/3JsSi1eZjNA', s: '2-3Ã—12-15'},
-            'Overhead Triceps Extension': {v: 'https://youtu.be/YbX7Wd8jQ-Q', s: '3Ã—10-12'},
-            'Triceps Pushdowns': {v: 'https://youtu.be/2-LAMcpzODU', s: '2-3Ã—12-15'},
-            'Lat Pulldown': {v: 'https://youtu.be/CAwf7n6Luuc', s: '3-4Ã—8-10'},
-            'Single-Arm Dumbbell Row': {v: 'https://youtu.be/roCP6wCXPqo', s: '3Ã—8-12'},
-            'Seated Cable Row': {v: 'https://youtu.be/UCXxvVItLoM', s: '3Ã—10-12'},
-            'Straight-Arm Pulldowns': {v: 'https://youtu.be/njrd2UqKtfk', s: '3Ã—12-15'},
-            'Rear Delt Fly': {v: 'https://youtu.be/T_Oslv8s6KQ', s: '3-4Ã—12-15'},
-            'EZ-Bar Curl': {v: 'https://youtu.be/kwG2ipFRgfo', s: '3Ã—8-12'},
-            'Cable Curls': {v: 'https://youtu.be/6jB1nLA-XdA', s: '2-3Ã—12-15'},
-            'Front Squat': {v: 'https://youtu.be/uYumuL_G_V0', s: '3-4Ã—8-10'},
-            'Leg Curl': {v: 'https://youtu.be/ELOCsoDSmrg', s: '3Ã—10-12'},
-            'Leg Extension': {v: 'https://youtu.be/YyvSfVjQeL0', s: '3Ã—10-15'},
-            'Bulgarian Split Squats': {v: 'https://youtu.be/2C-uNgKwPLE', s: '3Ã—8-10'},
+            'Barbell Bench Press': {v: 'https://youtu.be/rT7DgCr-3pg', s: '4×4-6'},
+            'Overhead Barbell Press': {v: 'https://youtu.be/2yjwXTZQDDI', s: '3×4-6'},
+            'Incline Dumbbell Press': {v: 'https://youtu.be/8iPEnn-ltC8', s: '3×6-8'},
+            'Weighted Dips': {v: 'https://youtu.be/2z8JmcrW-As', s: '3×6-8'},
+            'Lateral Raises': {v: 'https://youtu.be/3VcKaXpzqRo', s: '3×10-12'},
+            'Triceps Rope Pushdown': {v: 'https://youtu.be/2-LAMcpzODU', s: '3×10-12'},
+            'Push-ups': {v: 'https://youtu.be/IODxDxX7oi4', s: '2×AMRAP'},
+            'Deadlift': {v: 'https://youtu.be/op9kVnSso6Q', s: '3-4×3-5'},
+            'Weighted Pull-ups': {v: 'https://youtu.be/tB3X4TjTIes', s: '4×4-6'},
+            'Barbell Row': {v: 'https://youtu.be/FWJR5Ve8bnQ', s: '3×4-6'},
+            'Chest-Supported Row': {v: 'https://youtu.be/zE52eD7TD5I', s: '3×6-8'},
+            'Face Pulls': {v: 'https://youtu.be/rep-qVOkqgk', s: '3×12-15'},
+            'Barbell Bicep Curls': {v: 'https://youtu.be/ykJmrZ5v0Oo', s: '3×8-10'},
+            'Hammer Curls': {v: 'https://youtu.be/zC3nLlEvin4', s: '2×10-12'},
+            'Back Squat': {v: 'https://youtu.be/ultWZbUMPL8', s: '4×4-6'},
+            'Romanian Deadlift': {v: 'https://youtu.be/2SHsk9AzdjA', s: '3×6-8'},
+            'Leg Press': {v: 'https://youtu.be/IZxyjW7MPJQ', s: '3×8-10'},
+            'Walking Lunges': {v: 'https://youtu.be/L8fvypPrzzs', s: '3×10/leg'},
+            'Calf Raises': {v: 'https://youtu.be/gwLzBJYoWlI', s: '4×10-12'},
+            'Hanging Leg Raises': {v: 'https://youtu.be/Pr1ieGZ5atk', s: '3×10-15'},
+            'Incline Barbell Press': {v: 'https://youtu.be/SrqOu55lrYU', s: '3-4×8-10'},
+            'Flat Dumbbell Press': {v: 'https://youtu.be/622ku8i0M14', s: '3×8-12'},
+            'Machine Chest Press': {v: 'https://youtu.be/xUm0BiZCWlQ', s: '3×10-12'},
+            'Dumbbell Lateral Raises': {v: 'https://youtu.be/3VcKaXpzqRo', s: '4×12-15'},
+            'Cable Front Raises': {v: 'https://youtu.be/3JsSi1eZjNA', s: '2-3×12-15'},
+            'Overhead Triceps Extension': {v: 'https://youtu.be/YbX7Wd8jQ-Q', s: '3×10-12'},
+            'Triceps Pushdowns': {v: 'https://youtu.be/2-LAMcpzODU', s: '2-3×12-15'},
+            'Lat Pulldown': {v: 'https://youtu.be/CAwf7n6Luuc', s: '3-4×8-10'},
+            'Single-Arm Dumbbell Row': {v: 'https://youtu.be/roCP6wCXPqo', s: '3×8-12'},
+            'Seated Cable Row': {v: 'https://youtu.be/UCXxvVItLoM', s: '3×10-12'},
+            'Straight-Arm Pulldowns': {v: 'https://youtu.be/njrd2UqKtfk', s: '3×12-15'},
+            'Rear Delt Fly': {v: 'https://youtu.be/T_Oslv8s6KQ', s: '3-4×12-15'},
+            'EZ-Bar Curl': {v: 'https://youtu.be/kwG2ipFRgfo', s: '3×8-12'},
+            'Cable Curls': {v: 'https://youtu.be/6jB1nLA-XdA', s: '2-3×12-15'},
+            'Front Squat': {v: 'https://youtu.be/uYumuL_G_V0', s: '3-4×8-10'},
+            'Leg Curl': {v: 'https://youtu.be/ELOCsoDSmrg', s: '3×10-12'},
+            'Leg Extension': {v: 'https://youtu.be/YyvSfVjQeL0', s: '3×10-15'},
+            'Bulgarian Split Squats': {v: 'https://youtu.be/2C-uNgKwPLE', s: '3×8-10'},
             'Plank': {v: 'https://youtu.be/pvIjsG5Svck', s: '30-45s'},
             'Cable Woodchop': {v: 'https://youtu.be/pAplQXk3dkU', s: '12-15'},
             'Ab Wheel': {v: 'https://youtu.be/1mSNDBNZwM4', s: '8-12'}
         };
 
         const routines = [
-            {id: 'day1', name: 'Day 1 â€“ Heavy Push', desc: 'Chest, Shoulders, Triceps', ex: ['Barbell Bench Press', 'Overhead Barbell Press', 'Incline Dumbbell Press', 'Weighted Dips', 'Lateral Raises', 'Triceps Rope Pushdown', 'Push-ups']},
-            {id: 'day2', name: 'Day 2 â€“ Heavy Pull', desc: 'Back, Rear Delts, Biceps', ex: ['Deadlift', 'Weighted Pull-ups', 'Barbell Row', 'Chest-Supported Row', 'Face Pulls', 'Barbell Bicep Curls', 'Hammer Curls']},
-            {id: 'day3', name: 'Day 3 â€“ Heavy Legs', desc: 'Quads, Glutes, Hamstrings', ex: ['Back Squat', 'Romanian Deadlift', 'Leg Press', 'Walking Lunges', 'Calf Raises', 'Hanging Leg Raises']},
-            {id: 'day4', name: 'Day 4 â€“ Volume Push', desc: 'Hypertrophy Focus', ex: ['Incline Barbell Press', 'Flat Dumbbell Press', 'Machine Chest Press', 'Dumbbell Lateral Raises', 'Cable Front Raises', 'Overhead Triceps Extension', 'Triceps Pushdowns']},
-            {id: 'day5', name: 'Day 5 â€“ Volume Pull', desc: 'Back & Arm Hypertrophy', ex: ['Lat Pulldown', 'Single-Arm Dumbbell Row', 'Seated Cable Row', 'Straight-Arm Pulldowns', 'Rear Delt Fly', 'EZ-Bar Curl', 'Cable Curls']},
-            {id: 'day6', name: 'Day 6 â€“ Volume Legs + Core', desc: 'Legs & Core', ex: ['Front Squat', 'Leg Curl', 'Leg Extension', 'Bulgarian Split Squats', 'Calf Raises', 'Plank', 'Cable Woodchop', 'Ab Wheel']}
+            {id: 'day1', name: 'Day 1 – Heavy Push', desc: 'Chest, Shoulders, Triceps', ex: ['Barbell Bench Press', 'Overhead Barbell Press', 'Incline Dumbbell Press', 'Weighted Dips', 'Lateral Raises', 'Triceps Rope Pushdown', 'Push-ups']},
+            {id: 'day2', name: 'Day 2 – Heavy Pull', desc: 'Back, Rear Delts, Biceps', ex: ['Deadlift', 'Weighted Pull-ups', 'Barbell Row', 'Chest-Supported Row', 'Face Pulls', 'Barbell Bicep Curls', 'Hammer Curls']},
+            {id: 'day3', name: 'Day 3 – Heavy Legs', desc: 'Quads, Glutes, Hamstrings', ex: ['Back Squat', 'Romanian Deadlift', 'Leg Press', 'Walking Lunges', 'Calf Raises', 'Hanging Leg Raises']},
+            {id: 'day4', name: 'Day 4 – Volume Push', desc: 'Hypertrophy Focus', ex: ['Incline Barbell Press', 'Flat Dumbbell Press', 'Machine Chest Press', 'Dumbbell Lateral Raises', 'Cable Front Raises', 'Overhead Triceps Extension', 'Triceps Pushdowns']},
+            {id: 'day5', name: 'Day 5 – Volume Pull', desc: 'Back & Arm Hypertrophy', ex: ['Lat Pulldown', 'Single-Arm Dumbbell Row', 'Seated Cable Row', 'Straight-Arm Pulldowns', 'Rear Delt Fly', 'EZ-Bar Curl', 'Cable Curls']},
+            {id: 'day6', name: 'Day 6 – Volume Legs + Core', desc: 'Legs & Core', ex: ['Front Squat', 'Leg Curl', 'Leg Extension', 'Bulgarian Split Squats', 'Calf Raises', 'Plank', 'Cable Woodchop', 'Ab Wheel']}
         ];
 
         let activeWorkout = null;
@@ -301,7 +298,7 @@
             activeWorkout = {id: routineId, name: routine.name, data: {}};
             
             routine.ex.forEach(ex => {
-                const sets = parseInt(exercises[ex].s.split('Ã—')[0]) || 3;
+                const sets = parseInt(exercises[ex].s.split('×')[0]) || 3;
                 activeWorkout.data[ex] = Array(sets).fill().map(() => ({w: '', r: '', d: false}));
             });
             
@@ -381,17 +378,17 @@
                     <div class="routine-header" onclick="toggleRoutine('${routine.id}')">
                         <div>
                             <div class="routine-title">${routine.name}</div>
-                            <div class="routine-meta">${routine.desc} â€¢ ${routine.ex.length} exercises</div>
+                            <div class="routine-meta">${routine.desc} • ${routine.ex.length} exercises</div>
                         </div>
-                        <span>â–¼</span>
+                        <span>▼</span>
                     </div>
-                    ${!activeWorkout ? `<button class="start-btn" onclick="startWorkout('${routine.id}')">â–¶ Start Workout</button>` : ''}
+                    ${!activeWorkout ? `<button class="start-btn" onclick="startWorkout('${routine.id}')">▶ Start Workout</button>` : ''}
                     <div id="exercises-${routine.id}" class="exercise-list">
                         ${routine.ex.map(ex => `
                             <div class="exercise-item">
                                 <div class="exercise-header">
                                     <div class="exercise-name">${ex}</div>
-                                    <a href="${exercises[ex].v}" target="_blank" class="video-link">ðŸ“¹ Tutorial</a>
+                                    <a href="${exercises[ex].v}" target="_blank" class="video-link">📹 Tutorial</a>
                                 </div>
                                 <div class="exercise-details">Target: ${exercises[ex].s}</div>
                                 ${activeWorkout && activeWorkout.id === routine.id ? `
@@ -410,7 +407,7 @@
                                                         onchange="updateSet('${ex}',${i},'r',this.value)" placeholder="0">
                                                 </div>
                                                 <button class="check-btn ${set.d?'done':''}" onclick="toggleComplete('${ex}',${i})">
-                                                    ${set.d?'âœ“':''}
+                                                    ${set.d?'✓':''}
                                                 </button>
                                             </div>
                                         `).join('')}
@@ -421,7 +418,7 @@
                         `).join('')}
                     </div>
                     ${activeWorkout && activeWorkout.id === routine.id ? `
-                        <button class="finish-btn" onclick="finishWorkout()">âœ“ Finish Workout</button>
+                        <button class="finish-btn" onclick="finishWorkout()">✓ Finish Workout</button>
                     ` : ''}
                 </div>
             `).join('');
@@ -430,7 +427,7 @@
         function renderHistory() {
             const container = document.getElementById('historyTab');
             if (history.length === 0) {
-                container.innerHTML = '<div class="empty"><div style="font-size:48px">ðŸ“Š</div><h2>No Workouts Yet</h2><p>Start your first workout!</p></div>';
+                container.innerHTML = '<div class="empty"><div style="font-size:48px">📊</div><h2>No Workouts Yet</h2><p>Start your first workout!</p></div>';
                 return;
             }
             container.innerHTML = history.map(w => {
@@ -439,7 +436,7 @@
                     <div class="history-item">
                         <div class="history-date">${date.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric', year:'numeric'})}</div>
                         <div class="history-routine">${w.routine}</div>
-                        <div class="history-stats">â±ï¸ ${formatTime(w.duration)} â€¢ ðŸ‹ï¸ ${w.sets} sets â€¢ ðŸ“¦ ${w.volume} kg</div>
+                        <div class="history-stats">⏱️ ${formatTime(w.duration)} • 🏋️ ${w.sets} sets • 📦 ${w.volume} kg</div>
                     </div>
                 `;
             }).join('');
@@ -477,7 +474,7 @@
                             <div style="margin-bottom:0.75rem;padding-bottom:0.75rem;border-bottom:1px solid #334155">
                                 <div style="font-weight:600">${w.routine}</div>
                                 <div style="color:#94a3b8;font-size:0.85rem;margin-top:0.25rem">
-                                    ${new Date(w.date).toLocaleDateString()} â€¢ ${w.sets} sets
+                                    ${new Date(w.date).toLocaleDateString()} • ${w.sets} sets
                                 </div>
                             </div>
                         `).join('')}
@@ -495,14 +492,5 @@
 
         renderRoutines();
     </script>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker
-                .register('sw.js')
-                .catch(err => console.log('Service Worker registration failed:', err));
-        });
-    }
-</script>
 </body>
 </html>
